@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 860px;
+    margin: 0 auto;
+    -border: 1px solid #ccc;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#header{
+    padding-top: 75px;
+}
+#header .header-left{
+    float: left;
+    width: 480px;
+    
+    padding-left: 12px;
+
+}
+#header .header-left h3{
+    font-weight: normal;
+    font-size: 28px;
+    font-family: arial;
+    padding-top: 40px;
+    padding-left: 160px;
+}
+#header .header-left p{
+    /*font-weight: bold;*/
+    line-height: 32px;
+    padding-left: 160px;
+}
+#header .header-left .person{
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+.person img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#header .header-right{
+    float: right;
+    width: 360px;
+    padding-top: 5px;
+
+}
+#header .header-right h3{
+    
+    line-height: 28px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+#header .header-right p{
+    line-height: 32px;
+}
+#header .header-right strong{
+    display: inline-block;
+    width: 80px;
+}
+#main{
+    font-size: 14px;
+}
+.experience{
+    margin-bottom: 20px;
+}
+.experience h3,
+.skill h3{
+    width: 400px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.work{
+    position: relative;
+    margin-left: 10px;
+    padding-left: 60px;
+    border-left: 1px solid #000; 
+    
+
+}
+.work::before{
+    content:'';
+    display: block;
+    position: absolute;
+    left: -6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+}
+.work h4{
+    font-weight: normal;
+    line-height: 32px;
+    
+}
+.work p{
+    padding-bottom: 30px;
+}
+.work em{
+    color: #666;
+    font-size: 14px;
+    font-style: normal;
+}
+#footer{
+    font-size: 14px;
+}
+.footer-left{
+    float: left;
+}
+.footer-right{
+    float: right;
+}
+#footer .work{
+    width: 300px;
+    border: none;
+}
+#footer .work::before{
+    content:'+';
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #000;
+}
+.work-left{   
+    float: left;
+}
+.work-right{
+    float: right;
+}
+#footer .footer-right .work{
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+#footer .footer-right h3{
+    width: 320px;
+}
+#footer .footer-right .work::before{
+    top: 0;
+}
